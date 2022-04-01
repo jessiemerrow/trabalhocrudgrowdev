@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="./css/styles2.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+
+                <h5>MEUS RECADOS</h5>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Descrição</label>
+                        <input type="text" name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="product">Detalhamento</label>
+                        <input type="text" name="product" id="product">
+                    </div>
+                    <div>
+                        <label for="qty" style="display: none;" >Qty</label>
+                        <input type="number" name="qty" id="qty" style="display: none;" >
+                    </div>
+                    <div>
+                        <label for="perPrice" style="display: none;"  >Price</label>
+                        <input type="number" name="perPrice" id="perPrice" style="display: none;" >
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th>Detalhamento</th>
+                                <th style="display: none;">Qty</th>
+                                <th style="display: none;">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./js/home.js"></script>
+</body>
+</html>
